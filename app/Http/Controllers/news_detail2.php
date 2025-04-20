@@ -11,6 +11,6 @@ class news_detail2 extends Controller
         $detail = News::orderBy('id','desc')->where('id',$id)->first();
         // $relatedProducts = News::orderBy('id','desc')->where('category_id',$detail->category_id)->where('id','!=',$id)->limit(4)->get();
         // dd($detail);
-        return view('news-detail2',compact('detail'));
+        return view('news-details2',compact('detail'));
     }
 }

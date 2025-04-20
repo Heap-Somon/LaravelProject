@@ -30,15 +30,16 @@
                     </li>
                 </ul>
                 <div class="search">
-                <form>
-                    <input type="text" name="s" id="search-box" class="box" placeholder="SEARCH HERE">
-                    <img width="25" height="25" style="margin-left: 180px;" class="position-absolute" src="{{ url('search.png') }}" alt="">
-                </form>
+                    <form>
+                        <input type="text" name="s" id="search-box" class="box" placeholder="SEARCH HERE">
+                        <img width="25" height="25" style="margin-left: 180px;" class="position-absolute" src="{{ url('search.png') }}" alt="">
+                    </form>
                 </div>
             </div>
         </header>
-
-        @yield('content')
+        <div class="content">
+            @yield('content')
+        </div>
         <footer>
             <span>
                 AllRight Recieved @ 2023
@@ -60,10 +61,11 @@
                         filter
                     },
                     success :function(response){
+                        console.log("AJAX Success:", response); // Debug: Log the server response
                         $('.content').html(response);
                     },
                     error :function (message, status, xhr){
-                        console.log(message.responseText);
+                        console.log("AJAX Error:", message.responseText); // Debug: Log the error message
                     }
                 })
             })

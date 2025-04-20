@@ -31,7 +31,7 @@ Route::get('news/',[news::class,'index']);
 
 Route::get('product/',[product::class,'index']);
 
-Route::get('search/',[search::class,'index']);
+Route::get('search/',[search::class,'index'])->name('search');
 
 Route::get('/shop/',[shop::class,'index']);
 

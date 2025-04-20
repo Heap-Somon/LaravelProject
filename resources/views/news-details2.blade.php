@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="thumbnail">
-                                <img src="https://127.0.0.1/products/{{ $detail -> thumbnail }}" alt="" style="width:250px; height: 300px;">
+                                <img src="https://127.0.0.1/products/{{ $detail -> thumbnail }}" alt="" style="width:450px; height: 300px;">
                             </div>
                         </div>
                         <div class="col-7">
@@ -38,39 +38,6 @@
                                     </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="main-title">
-                                Related Products
-                            </h3>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        @foreach ($relatedProducts as $relatedProduct)
-                            <div class="col-3">
-                                <figure>
-                                    <div class="thumbnail">
-                                        <!-- <div class="status">
-                                            Promotion
-                                        </div>  -->
-                                        <a href="">
-                                            <img src="https://127.0.0.1/products/{{ $relatedProduct -> thumbnail }}" alt="" style="width:250px; height: 300px;">
-                                        </a>
-                                    </div>
-                                    <div class="detail">
-                                        <div class="price-list">
-                                            <div class="price d-none">US 10</div>
-                                            <div class="regular-price "><strike> US {{$relatedProduct -> regular_price}}</strike></div>
-                                            <div class="sale-price ">% -{{ ($relatedProduct->sale_price * 100)/ $relatedProduct->regular_price }}</div>
-                                        </div>
-                                        <h5 class="title">{{$relatedProduct -> name}}</h5>
-                                    </div>
-                                </figure>
-                            </div>
-                        @endforeach
                     </div>
                 </div>
             </section>

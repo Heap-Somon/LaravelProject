@@ -18,7 +18,7 @@
                             <div class="col-3">
                                 <figure>
                                     <div class="thumbnail">
-                                        <a href="news_detail2/{{ $latestNew -> id }}">
+                                        <a href="/news_detail2/{{ $latestNew -> id }}">
                                             <img src="https://127.0.0.1/products/{{ $latestNew -> thumbnail }}" alt="">
                                         </a>
                                     </div>
