@@ -239,6 +239,26 @@ figure .thumbnail .status {
     display: flex;
     gap: 50px;
 }
+.news-detail .detail .top .date .name{
+    font-size: 30px;
+}
+.news-detail .detail .top .viewer{
+    color: rgb(74, 0, 0);
+    margin-top: 43px;
+}
+.news-detail .detail .top .viewers{
+    color: rgb(74, 0, 0);
+    margin-top: 73px;
+    margin-right: 150px;
+}
 .news-detail .detail .top span {
     font-weight: bold;
+}
+.regular-price1{
+    font-size: 40px;
+    color: #007728;
+}
+.sale-price1{
+    font-size: 40px;
+    color: #007728;
 }
